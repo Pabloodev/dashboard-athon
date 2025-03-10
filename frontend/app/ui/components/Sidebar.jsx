@@ -1,3 +1,6 @@
+"use client"
+import clsx from "clsx";
+
 import {
   ChartColumn,
   PhoneCall,
@@ -8,62 +11,72 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const links = [
+  {
+    name: "Dashboard Geral",
+    href: "/dashboard",
+    icon: ChartColumn
+  },
+  {
+    name: "Atendimento N1",
+    href: "/dashboard/suporte",
+    icon: PhoneCall,
+    iconColor: "#0fafff"
+  },
+  {
+    name: "Financeiro",
+    href: "/dashboard/financeiro",
+    icon: DollarSign,
+    iconColor: "#93ff0f"
+  },
+  {
+    name: "Comercial",
+    href: "/dashboard/comercial",
+    icon: Users,
+    iconColor: "#7000a3"
+  },
+  {
+    name: "Retenção",
+    href: "/dashboard/retencao",
+    icon: HandHeart,
+    iconColor: "#fea9ef"
+  },
+  {
+    name: "Qualidade",
+    href: "/dashboard/qualidade",
+    icon: ChartNoAxesColumnIncreasing,
+    iconColor: "#a33900"
+  },
+]
 
 export default function Sidebar() {
-  return (
-    <div className="flex flex-col h-screen border border-gray-600 w-[400px] max-w-[400px]">
-      <Link
-        className="flex items-center gap-4 border-b border-gray-600 p-5"
-        href={"/dashboard"}
-      >
-        <ChartColumn />
-        <h1 className="font-medium">Dashboard</h1>
-      </Link>
 
+  const pathname = usePathname()
+
+  return (
+    <div className="flex flex-col h-screen border border-gray-600 w-[300px] max-w-[300px]">
       <div className="flex flex-col p-5 justify-between flex-1 text-start">
-        <ul className="flex flex-col space-y-8">
-          <li className="flex items-center gap-3">
-            <Link
-              href={"/dashboard/suporte"}
-              className="flex items-center gap-3"
-            >
-              <PhoneCall color="#0fafff" />
-              <h2>Atendimento N1</h2>
-            </Link>
-          </li>
-          <li className="flex items-center gap-3">
-            <Link
-              href={"/dashboard/financeiro"}
-              className="flex items-center gap-3"
-            >
-              <DollarSign color="#93ff0f" />
-              <h2>Financeiro</h2>
-            </Link>
-          </li>
-          <li className="flex items-center gap-3">
-            <Link
-              className="flex items-center gap-3"
-              href={"/dashboard/comercial"}
-            >
-              <Users color="#7000a3" />
-              <h2>Comercial</h2>
-            </Link>
-          </li>
-          <li className="flex items-center gap-3">
-            <Link
-              href={"/dashboard/retencao"}
-              className="flex items-center gap-3"
-            >
-              <HandHeart color="#fea9ef" />
-              <h2>Retenção</h2>
-            </Link>
-          </li>
-          <li className="flex items-center gap-3">
-            <Link href={"/dashboard/qualidade"} className="flex items-center gap-3">
-              <ChartNoAxesColumnIncreasing color="#a33900" />
-              <h2>Qualidade</h2>
-            </Link>
-          </li>
+        <ul className="flex flex-col space-y-5">
+          {links.map((link, index) => (
+            <li key={index}>
+              <Link
+                href={link.href}
+                className={clsx(
+                  "flex items-center gap-3 p-5 transition duration-700",
+                  {
+                    "bg-sky-900": pathname === link.href,
+                    "hover:bg-sky-950": pathname !== link.href,
+                  }
+                )}
+              >
+                <link.icon color={link.iconColor} />
+                <h2>{link.name}</h2>
+              </Link>
+            </li>
+          ))}
+
         </ul>
 
         <div className="flex items-center gap-2">
@@ -73,7 +86,7 @@ export default function Sidebar() {
             height={20}
             alt="Athon Logo"
           />
-          <span className="font-medium text-lg">Athon Telecom</span>
+          <span className="font-medium text-lg text-center">Athon Telecom</span>
         </div>
       </div>
     </div>
