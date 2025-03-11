@@ -72,7 +72,7 @@ export default function Sidebar() {
                   }
                 )}
               >
-                <link.icon color={link.iconColor} size={32} />
+                <link.icon color={link.iconColor} size={20} />
                 <h2 className="text-sm lg:text-lg">{link.name}</h2>
               </Link>
             </li>
