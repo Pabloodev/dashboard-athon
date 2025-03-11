@@ -4,7 +4,7 @@ import { Headphones, Star, BadgeCheck, Clock } from "lucide-react";
 export default function Page() {
   return (
     <div className="max-w-screen-2xl mx-auto px-5 lg:px-10">
-      <div className="mb-5 md:mb-10">
+      <div className="m-10">
         <h1 className="text-2xl md:text-4xl xl:text-5xl font-medium">
           Dashboard Geral
         </h1>
