@@ -57,7 +57,7 @@ export default function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <div className="flex flex-col h-screen border border-gray-600 w-[400px] max-w-[300px]">
+    <div className="flex flex-col h-screen border border-gray-600">
       <div className="flex flex-col p-5 justify-between flex-1 text-start">
         <ul className="flex flex-col space-y-5">
           {links.map((link, index) => (
@@ -73,7 +73,7 @@ export default function Sidebar() {
                 )}
               >
                 <link.icon color={link.iconColor} />
-                <h2 className="text-lg">{link.name}</h2>
+                <h2 className="text-sm">{link.name}</h2>
               </Link>
             </li>
           ))}
@@ -87,7 +87,7 @@ export default function Sidebar() {
             height={30}
             alt="Athon Logo"
           />
-          <span className="font-medium text-2xl text-center">Athon Telecom</span>
+          <span className="font-medium text-sm text-center">Athon Telecom</span>
         </div>
       </div>
     </div>
