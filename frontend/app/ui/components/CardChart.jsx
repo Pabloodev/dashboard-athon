@@ -5,7 +5,7 @@ export default function CardChart({ Icon, colorIcon, title }) {
         <p className="text-lg">{title}</p>
         {Icon && <Icon color={colorIcon} size={24} />}
       </div>
-      <span className="text-4xl md:text-5xl xl:text-6xl font-bold">82</span>
+      <span className="text-4xl md:text-5xl xl:text-6xl font-bold mt-7">82</span>
     </div>
   );
 }
