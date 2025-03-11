@@ -8,7 +8,7 @@ export default function Page() {
         <h1 className="text-2xl font-medium">Dasboard Comercial</h1>
         <p className="text-orange-700 text-lg">Visão geral de atendimentos</p>
       </div>
-      <div className="flex items-center gap-5 flex-wrap">
+      <div className="flex items-center justify-center gap-5 flex-wrap">
         <CardChart Icon={Headphones} colorIcon={"#06fefa"} title={"Atendimentos em andamento"} />
         <CardChart Icon={Star} colorIcon={"#fee906"} title={"Média de avaliação"} />
         <CardChart Icon={BadgeCheck} colorIcon={"#0afe06"} title={"Total Finalizado"} />
