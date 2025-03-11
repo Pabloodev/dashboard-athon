@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div>
       <div className="m-10">
-        <h1 className="text-2xl font-medium">Dasboard Comercial</h1>
+        <h1 className="text-2xl font-medium">Dashboard Comercial</h1>
         <p className="text-orange-700 text-lg">Visão geral de atendimentos</p>
       </div>
       <div className="flex items-center justify-center gap-5 flex-wrap">
