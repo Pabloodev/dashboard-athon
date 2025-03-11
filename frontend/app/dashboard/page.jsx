@@ -9,7 +9,7 @@ export default function Page() {
       <p className="text-gray-400 text-lg">Visão geral de atendimentos</p>
       </div>
 
-      <div className="flex items-center justify-center gap-10 flex-wrap">
+      <div className="flex items-center justify-center gap-5 flex-wrap">
         <CardChart Icon={Headphones} colorIcon={"#06fefa"} title={"Atendimentos em andamento"} />
         <CardChart Icon={Star} colorIcon={"#fee906"} title={"Média de avaliação"} />
         <CardChart Icon={BadgeCheck} colorIcon={"#0afe06"} title={"Total Finalizado"} />
