@@ -87,7 +87,7 @@ export default function Sidebar() {
             height={40}
             alt="Athon Logo"
           />
-          <span className="font-medium text-sm text-center">Athon Telecom</span>
+          <span className="font-medium text-base text-center">Athon Telecom</span>
         </div>
       </div>
     </div>
