@@ -83,11 +83,11 @@ export default function Sidebar() {
         <div className="flex items-center gap-3 justify-center">
           <Image
             src={"/athonfav.png"}
-            width={40}
-            height={40}
+            width={20}
+            height={20}
             alt="Athon Logo"
           />
-          <span className="font-medium text-base lg:text-lg text-center">Athon Telecom</span>
+          <span className="font-medium text-base text-center">Athon Telecom</span>
         </div>
       </div>
     </div>
