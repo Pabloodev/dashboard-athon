@@ -4,7 +4,7 @@ import { Headphones, Star, BadgeCheck, Clock } from 'lucide-react';
 export default function Page() {
   return (
     <div>
-      <div className="m-10">
+      <div className="m-[5px]">
         <h1 className="text-4xl font-medium">Dasboard Suporte</h1>
         <p className="text-sky-400 text-xl">Visão geral de atendimentos</p>
       </div>
