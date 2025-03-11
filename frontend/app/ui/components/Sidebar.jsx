@@ -65,7 +65,7 @@ export default function Sidebar() {
               <Link
                 href={link.href}
                 className={clsx(
-                  "flex items-center gap-3 p-5 transition duration-300 rounded-lg text-base lg:text-lg xl:text-xl",
+                  "flex items-center gap-3 p-2 transition duration-300 rounded-lg text-base lg:text-lg xl:text-xl",
                   {
                     "bg-sky-900": pathname === link.href,
                     "hover:bg-sky-950": pathname !== link.href,
