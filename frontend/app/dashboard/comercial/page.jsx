@@ -6,7 +6,7 @@ export default function Page() {
     <div>
       <div className="m-10">
         <h1 className="text-4xl font-medium">Dasboard Comercial</h1>
-        <p className="text-purple-400 text-xl">Visão geral de todos os setores</p>
+        <p className="text-purple-400 text-xl">Visão geral de atendimentos</p>
       </div>
       <div className="flex items-center gap-10 flex-wrap">
         <CardChart Icon={Headphones} colorIcon={"#06fefa"} title={"Atendimentos em andamento"}/>
