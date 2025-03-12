@@ -1,6 +1,6 @@
 export default function CardChart({ Icon, colorIcon, title }) {
   return (
-    <div className="border border-gray-400 p-3 text-center rounded-lg min-w-[400px]">
+    <div className="border border-gray-400 p-3 text-center rounded-lg min-w-[200px]">
       <div className="flex items-center justify-center gap-2 mb-10">
         <p className="text-lg">{title}</p>
         {Icon && <Icon color={colorIcon} size={24} />}
