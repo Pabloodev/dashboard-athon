@@ -57,9 +57,9 @@ export default function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <div className="">
-      <div className="">
-        <ul className="">
+    <div className="flex flex-col h-screen border border-gray-600 transition-all duration-300">
+      <div className="flex flex-col p-5 justify-between flex-1 text-start">
+        <ul className="flex flex-col space-y-5">
           {links.map((link, index) => (
             <li key={index}>
               <Link
