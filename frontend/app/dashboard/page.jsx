@@ -11,7 +11,7 @@ export default function Page() {
 
       <div className="flex items-center justify-center gap-5 flex-wrap">
         <CardChart Icon={Headphones} colorIcon={"#06fefa"} title={"Atendimentos em andamento"} value={236} />
-        <CardChart Icon={Star} colorIcon={"#fee906"} title={"Média de avaliação"} value={5.0}/>
+        <CardChart Icon={Star} colorIcon={"#fee906"} title={"Média de avaliação"} value={"4,9"}/>
         <CardChart Icon={BadgeCheck} colorIcon={"#0afe06"} title={"Total Finalizado"} value={312}/>
         <CardChart Icon={Clock} colorIcon={"#fe6a39"} title={"Tempo Médio de Atendimento"} value={"2,3 minutos"}/>
       </div>
