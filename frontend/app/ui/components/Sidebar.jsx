@@ -1,7 +1,6 @@
 "use client"
+
 import clsx from "clsx";
-
-
 
 import Image from "next/image";
 import Link from "next/link";
@@ -15,14 +14,14 @@ export default function Sidebar() {
 
   return (
     <div className="flex flex-col h-screen border border-gray-600 transition-all duration-300">
-      <div className="flex flex-col p-5 justify-between flex-1 text-start">
+      <div className="flex flex-col p-2 justify-between flex-1 text-start">
         <ul className="flex flex-col space-y-5">
           {links.map((link, index) => (
             <li key={index}>
               <Link
                 href={link.href}
                 className={clsx(
-                  "flex items-center gap-3 p-2 transition duration-300 rounded-lg text-base lg:text-lg xl:text-xl",
+                  "flex items-center gap-3 p-2 transition duration-300 rounded-sm text-base lg:text-lg xl:text-xl",
                   {
                     "bg-sky-900": pathname === link.href,
                     "hover:bg-sky-950": pathname !== link.href,

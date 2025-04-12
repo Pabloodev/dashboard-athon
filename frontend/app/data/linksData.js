@@ -9,37 +9,37 @@ import {
 
 const links = [
     {
-        name: "Dashboard Geral",
-        href: "/dashboard",
+        name: "Geral",
+        href: "/",
         icon: ChartColumn
     },
     {
         name: "Atendimento N1",
-        href: "/dashboard/suporte",
+        href: "/suporte",
         icon: PhoneCall,
         iconColor: "#0fafff"
     },
     {
         name: "Financeiro",
-        href: "/dashboard/financeiro",
+        href: "/financeiro",
         icon: DollarSign,
         iconColor: "#93ff0f"
     },
     {
         name: "Comercial",
-        href: "/dashboard/comercial",
+        href: "/comercial",
         icon: Users,
         iconColor: "#7000a3"
     },
     {
         name: "Retenção",
-        href: "/dashboard/retencao",
+        href: "/retencao",
         icon: HandHeart,
         iconColor: "#fea9ef"
     },
     {
         name: "Qualidade",
-        href: "/dashboard/qualidade",
+        href: "/qualidade",
         icon: ChartNoAxesColumnIncreasing,
         iconColor: "#a33900"
     },
